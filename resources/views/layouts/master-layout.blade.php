@@ -34,6 +34,8 @@
         href="{{ url('/') }}/admin/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
     <link rel="stylesheet" href="{{ url('/') }}/admin/assets/vendor/libs/apex-charts/apex-charts.css" />
 
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
 
     {{-- Date Range Picker --}}
     <script src="{{ url('/') }}/admin/assets/daterange.min.js"></script>
@@ -241,5 +243,6 @@
 <script src="{{ url('/') }}/admin/assets/vendor/libs/apex-charts/apexcharts.js"></script>
 <script src="{{ url('/') }}/admin/assets/js/main.js"></script>
 <script src="{{ url('/') }}/admin/assets/js/dashboards-analytics.js"></script>
+
 
 </html>

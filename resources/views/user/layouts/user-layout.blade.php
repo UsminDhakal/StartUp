@@ -1,5 +1,7 @@
 <x-master-layout>
-
+    @section('sidebar')
+        @include('user.layouts.sidebar')
+    @endsection
 
     {{ $slot }}
 

@@ -16,33 +16,20 @@
 
     <ul class="menu-inner py-1">
 
-        <li class="menu-item">
-            <a href="" class="menu-link">
+        <li class="menu-item {{ Route::currentRouteName() == 'user.index.dashboard' ? 'active' : '' }}">
+            <a href="{{route("user.index.dashbaord")}}" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-home-circle"></i>
                 <div data-i18n="Analytics">Dashboard</div>
             </a>
         </li>
 
-        <li class="menu-item {{ Route::currentRouteName() == 'admin.user.index' ? 'active' : '' }}">
-            <a href="{{route("admin.user.index")}}" class="menu-link">
+        <li class="menu-item {{ Route::currentRouteName() == 'user.expense.index' ? 'active' : '' }}">
+            <a href="{{route("user.expense.index")}}" class="menu-link">
                 <i class='menu-icon bx bx-user'></i>
-                <div data-i18n="Analytics">Create User</div>
+                <div data-i18n="Analytics">My Expense</div>
             </a>
         </li>
 
-        <li class="menu-item {{ Route::currentRouteName() == 'admin.topic.index' ? 'active' : '' }}">
-            <a href="{{route("admin.topic.index")}}" class="menu-link">
-                <i class='menu-icon bx bxs-book-add'></i>
-                <div data-i18n="Analytics">Topic</div>
-            </a>
-        </li>
-
-        <li class="menu-item {{ Route::currentRouteName() == 'admin.fund.index' ? 'active' : '' }}">
-            <a href="{{route("admin.fund.index")}}" class="menu-link">
-                <i class='menu-icon bx bxs-wallet' ></i>
-                <div data-i18n="Analytics">Funds</div>
-            </a>
-        </li>
 
     </ul>
 </aside>

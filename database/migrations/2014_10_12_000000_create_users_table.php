@@ -18,6 +18,7 @@ return new class extends Migration
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->integer('user_role')->default(1)->comment('1 is user and 0 is admin');
+            $table->float("equity")->default(0);
             $table->rememberToken();
             $table->timestamps();
         });
